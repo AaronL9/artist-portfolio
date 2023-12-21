@@ -1,3 +1,80 @@
 body {
-  font-family: 'Cormorant', serif;
+  font-family: Cormorant, serif;
+}
+
+/* HEADER */
+.navbar {
+  margin: 32px;
+  /* border: 1px solid black */
+}
+h1 {
+  display: inline-block;
+  font-weight: 300;
+  margin: 0 32px 0 0;
+}
+.links {
+  display: inline-block;
+}
+.links li {
+  display: inline-block;
+}
+.links a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0 8px;
+}
+.links ul {
+  padding: 0;
+}
+.links a.active {
+  border-bottom: 1px solid black;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  width: min(500px, 90%);
+  box-sizing: border-box;
+  padding: 16px;
+}
+.card img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+.card img:hover {
+  opacity: 0.9;
+}
+.card h2 {
+  display: inline-block;
+  margin: 8px 0 16px 0;
+  font-weight: 300;
+}
+
+.about {
+  width: 40%;
+  min-width: 600px;
+  margin: 6.25rem 0 0 clamp(1.5rem, 10vw, 12.5rem);
+  /* margin: 100px 0 100px 200px; */
+}
+.about h3 {
+  font-size: 40px;
+  font-weight: 300;
+}
+.contact {
+  margin-top: 100px;
+}
+.contact p {
+  margin: 0;
+  font-size: 20px;
+}
+.cta {
+  border-bottom: 1px solid black;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-top: 0;
 }
